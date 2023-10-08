@@ -1,0 +1,38 @@
+.container_leftsidebar{
+    background-color:  rgb(49, 49, 49);
+    width: 4.5rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    height: calc(100vh - 3.5rem);
+    flex-direction: column;
+}
+.icon_sidebar_div
+{
+    /* border: 1px solid red; */
+    color: rgba(255, 255, 255, 0.856);
+    width: 100%;
+    height: fit-content;
+    padding:0.5rem 0px;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+.icon_sidebar
+{
+    margin: auto;
+}
+.text_sidebar_icon
+{
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    text-decoration:dotted;
+}
+.icon_sidebar_div:hover, .icon_sidebar_div:active
+{
+    color: aliceblue;
+    background-color: rgb(68, 68, 68);
+}

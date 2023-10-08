@@ -1,0 +1,62 @@
+.container_Drawer_Leftsidebar
+{
+    width: 100vw;
+    position: absolute;
+    z-index: 500;
+    display: flex;
+}
+.DrawerLeftSidebar
+{
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 15rem;
+    height: calc(100vh - 3.5rem);
+    
+
+}
+.container2_Drawer_Leftsidebar, .libraryBtn_Drawer_Leftsidebar
+{
+    background-color: rgb(34, 34, 34);
+    /* height: inherit; */
+    width: 15rem;
+    
+    border-bottom: 2px solid rgba(128, 128, 128, 0.293);
+}
+.subscriptions_lsdBar
+{
+    background-color: rgb(34, 34, 34);
+    width: 15rem;
+    overflow-y: auto;
+    color: white;
+    
+}
+.subscriptions_lsdBar h3{
+    margin: 20px 15px;
+    text-decoration: underline;
+}
+.channel_lsdBar
+{
+    display: flex;
+    cursor: pointer;
+}
+.channel_lsdBar :hover
+{
+    color: rgb(77, 77, 243);
+}
+.channel_lsdBar p
+{
+    padding: 0.5rem;
+    border: 1px solid white;
+    background-color: grey;
+    border-radius: 100%;
+    margin:0.5rem;
+}
+.channel_lsdBar div{
+    padding: 1rem;
+    margin-left: 1rem;
+}
+.container3_Drawer_LeftSidebar
+{
+    background-color: rgba(0, 0, 255, 0.452);
+    flex-grow: 1;
+}

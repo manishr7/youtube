@@ -1,0 +1,12 @@
+.container_Pages_App{
+    display: flex;
+    background-color: rgb(20, 20, 20);
+    /* border-top: 2px solid rgb(97, 97, 97); */
+}
+.container2_Pages_App
+{
+    /* background-color: wheat; */
+    width: calc(100vw - 5rem);
+    height: calc(100vh - 3.5rem);
+    overflow-y: auto;
+}
