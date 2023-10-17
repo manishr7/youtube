@@ -1,9 +1,11 @@
 .navbar-container
 {
-border: 1px solid black;
+border: 1px solid rgba(128, 128, 128, 0.247);
+border-bottom:2px solid rgba(128, 128, 128, 0.247);
 display: flex;
 height: calc(3.5rem - 2px);
 background-color: rgb(41, 41, 41);
+top:0;
 }
 .burger-logo
 {

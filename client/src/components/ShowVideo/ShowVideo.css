@@ -1,0 +1,55 @@
+.video_ShowVideo
+{
+    cursor: pointer;
+    margin: 0.4rem;
+    margin-bottom: 0;
+    width: calc(100% - 1rem);
+    height: 70%;
+    border: 1px solid rgba(128, 128, 128, 0.532);
+    
+    
+}
+video{
+    background-color: rgba(8, 8, 8, 0.652);
+}
+.video_description
+{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.video_details
+{
+    width: 90%;
+    color: aliceblue;
+    padding:0.1rem;
+    margin: 0.1rem;
+    margin-left: 0.5rem;
+    height: fit-content;
+    /* border: 1px solid green; */
+}
+.title_vid_ShowVideo
+{
+    margin:0;
+    font-size: large;
+    font-weight: bolder;
+    color: antiquewhite;
+    text-overflow: clip;
+}
+.vid_views_UploadTime
+{
+    font-size: small;
+    color: rgba(250, 235, 215, 0.555);
+    margin: 0.3rem;
+    display: flex;
+}
+.dot
+{
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    margin-top: 4px;
+    margin:auto 0.5rem;
+    border: 1px solid rgb(255, 255, 255);
+   background-color: white;
+}

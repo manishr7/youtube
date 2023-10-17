@@ -1,0 +1,15 @@
+.container_ShowVideoGrid
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Video_Box
+{
+    width: 21rem;
+    height: fit-content;
+    margin-bottom: 1rem;
+    border: 1px solid rgb(145, 145, 145);
+    
+
+}

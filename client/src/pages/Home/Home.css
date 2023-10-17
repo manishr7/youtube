@@ -10,3 +10,24 @@
     height: calc(100vh - 3.5rem);
     overflow-y: auto;
 }
+.navigation_Home
+{
+    color: white;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    position: sticky;
+    overflow-x: auto;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.247);
+    margin-bottom: 0.5rem
+}
+.nav_btn_Home
+{
+    background-color: rgb(47, 47, 47);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 45px;
+    cursor: pointer;
+}
+.nav_btn_Home:hover{
+    background-color: rgb(128, 128, 128);
+}

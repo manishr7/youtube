@@ -2,20 +2,21 @@ import React from 'react'
 import './DrawerSidebar.css'
 import './LeftSideBar.css'
 import { AiFillPlaySquare, AiOutlineHome, AiFillLike } from "react-icons/ai"
-import { MdOutlineExplore } from "react-icons/md"
+import { MdOutlineExplore, MdOutlineWatchLater } from "react-icons/md"
 import { MdOutlineSubscriptions } from "react-icons/md"
 import { MdOutlineVideoLibrary } from "react-icons/md"
 import { FaHistory } from 'react-icons/fa'
 import shorts from './shorts.png'
+import { NavLink } from 'react-router-dom'
 function DrawerSidebar({toggleDrawerSidebar,toggleDrawer}) {
     return (
-        <div className="container_Drawer_Leftsidebar" style={{toggleDrawerSidebar}}>
+        <div className="container_Drawer_Leftsidebar" style={toggleDrawerSidebar}>
             <div className="DrawerLeftSidebar">
                 <div className="container2_Drawer_Leftsidebar">
-                    <div className="icon_sidebar_div" style={{ flexDirection: "row" }}>
+                    <NavLink to={'/'} className="icon_sidebar_div" style={{ flexDirection: "row" }}>
                         <AiOutlineHome size={22} className='icon_sidebar' style={{ margin: "auto 1rem" }} />
                         <div className="text_sidebar_icon">Home</div>
-                    </div>
+                    </NavLink>
                     <div className="icon_sidebar_div" style={{ flexDirection: "row" }}>
                         <MdOutlineExplore size={22} className='icon_sidebar' style={{ margin: "auto 1rem" }} />
                         <div className="text_sidebar_icon">Explore</div>
@@ -30,22 +31,26 @@ function DrawerSidebar({toggleDrawerSidebar,toggleDrawer}) {
                     </div>
                 </div>
                 <div className="libraryBtn_Drawer_Leftsidebar">
-                    <div className="icon_sidebar_div" style={{ flexDirection: "row" }}>
+                    <NavLink to={'/library'} className="icon_sidebar_div" style={{ flexDirection: "row" }}>
                         <MdOutlineVideoLibrary size={22} className='icon_sidebar' style={{ margin: "auto 1rem" }} />
                         <div className="text_sidebar_icon" >Library</div>
-                    </div>
-                    <div className="icon_sidebar_div" style={{ flexDirection: "row" }}>
+                    </NavLink>
+                    <NavLink to={'/history'} className="icon_sidebar_div" style={{ flexDirection: "row" }}>
                         <FaHistory size={22} className='icon_sidebar' style={{ margin: "auto 1rem" }} />
                         <div className="text_sidebar_icon" >History</div>
-                    </div>
-                    <div className="icon_sidebar_div" style={{ flexDirection: "row" }}>
+                    </NavLink>
+                    <NavLink to={'/YourVideo'} className="icon_sidebar_div" style={{ flexDirection: "row" }}>
                         <AiFillPlaySquare size={23} className='icon_sidebar' style={{ margin: "auto 1rem" }} />
                         <div className="text_sidebar_icon" >Your Videos</div>
-                    </div>
-                    <div className="icon_sidebar_div" style={{ flexDirection: "row" }}>
+                    </NavLink>
+                    <NavLink to={'/watchlater'} className="icon_sidebar_div" style={{ flexDirection: "row" }}>
+                        <MdOutlineWatchLater size={23} className='icon_sidebar' style={{ margin: "auto 1rem" }} />
+                        <div className="text_sidebar_icon" >Watch Later</div>
+                    </NavLink>
+                    <NavLink to={'/LikedVideo'} className="icon_sidebar_div" style={{ flexDirection: "row" }}>
                         <AiFillLike size={23} className='icon_sidebar' style={{ margin: "auto 1rem" }} />
                         <div className="text_sidebar_icon" >Liked Videos</div>
-                    </div>
+                    </NavLink>
 
                 </div>
                 <div className="subscriptions_lsdBar" >

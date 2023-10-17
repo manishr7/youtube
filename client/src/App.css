@@ -2,6 +2,7 @@
     height: 2.3rem;
     width: 2.3rem;
     display: flex;
+    margin: auto;
     background-color: white;
     border-radius: 100%;
     cursor: pointer;
